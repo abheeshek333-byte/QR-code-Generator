@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Qr Code Generator </title>
+</head>
+
+<body>
+    <style>
+        body{
+    background-color:lightblue;}
+    </style>
+    <h1>Enter The Text </h1>
+    <input type="text" id="nameInput" placeholder="Enter Qr Text">
+    <button onclick="sendName()">Generate</button>
+    <p id="result"></p>
+
+    <script>
+        function sendName() {
+            const name = document.getElementById('nameInput').value;
+
+            fetch('/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').innerHTML = `<img src="${data.image_url}?t=${Date.now()}">`;
+                });
+        }
+    </script>
+</body>
+
+</html>
+
