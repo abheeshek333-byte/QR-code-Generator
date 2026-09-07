@@ -10,18 +10,19 @@ First of all, Do you Actually need a QR code Generator 🤨 ?
 1.Make Sure you put all files in one Single folder (app.py,index.html)
    
    
-2.But before that create a folder (just put Random-ass name, it doesn't matter at all) and put the index.html inside this folder
+2.But before that create a folder named "templates" and put the "index.html" inside this folder
    
    
-3.Here again 😉😁 Create another folder with name "static" . Although, You can  put Keyboard-smash names like "dkfhsdfskd" but
-    you have to have same Keyboard-smash name in place of "static" in "app.py".
+3. Create another folder with name "static" .
 
 
 
-4.Go to the terminal( Check The path shown in terminal is same as the path of directory where you put the my Kick ass QR generator 😎😎😎)
-if not (go learn git and Github first idiot ) just kidding😉🥱 use "cd " command to go that directory and when you reached that folder 
+4.Go to the terminal( Check The path shown in terminal is same as the path of directory where you put all files. if not, use "cd " command to go that directory and when you reached that folder 
 enter "python app.py"
-then " * Serving Flask app 'app'
+then
+
+
+" * Serving Flask app 'app'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on http://127.0.0.1:5000
